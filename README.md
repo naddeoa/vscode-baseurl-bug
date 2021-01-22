@@ -1,3 +1,5 @@
+UPDATE: the cause was actually eslint's import/no-unresolved rule. It doesn't know how to read the baseUrl in in this project setup and it doesn't show the squiglies until after you open up your .eslintrc file so it's a little tricky to track down. Just disabled that rule since typescript checks on its own.
+
 ## Repro repo for a possible vscode bug
 
 This repo demos an apparent bug in vscode's intellisense when using typescript with monorepos and opening your projects from the root of the monorepo.
