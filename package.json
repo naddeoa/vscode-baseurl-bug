@@ -1,0 +1,14 @@
+{
+  "name": "demo",
+  "workspaces": [
+    "projects/app"
+  ],
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "typescript": "~3.7.2"
+  },
+  "scripts": {
+    "build": "yarn workspace @demo/repro build"
+  }
+}
